@@ -1,4 +1,4 @@
 # YTRedir
-A userscript to redirect YT queries in your browser to a proxy
-Usable with Tamper/Greasemonkey in your browser.
-It redirects any YT access to a proxy server
+A userscript to redirect every youtube link and query 
+to the invidious instance of your choice
+use this with Tamper/Greasemonkey in your browser
