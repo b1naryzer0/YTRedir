@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        YTRedir
 // @namespace    https://github.com/b1naryzer0/YTRedir
-// @version      0.1
-// @description  redirects from youtube.com to yewtu.be
+// @version      0.2
+// @description  redirects any youtube link to invidious
 // @author       b1naryzer0
 // @match        *://*.youtube.com/*
 // @run-at      document-start
@@ -12,7 +12,7 @@
 (function() {
     'use strict';
 
-var newDomain="yewtu.be";
+var newDomain="invidious.namazso.eu"; // change this to your preferred invidious instance
 var newURL=location.protocol + "//"
 + newDomain //-- location.host
 + location.pathname
