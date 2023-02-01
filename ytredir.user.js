@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         YTRedir
-// @namespace    https://github.com/b1naryzer0/YTRedir/raw/main/ytredir.user.js
-// @version      0.21
-// @description  redirects any youtube link to invidious
+// @name         YouTubeRedirector
+// @namespace    https://github.com/b1naryzer0/YTRedir/edit/main/ytredir.user.js
+// @version      0.22
+// @description  redirects from YouTube to Invidious
 // @author       b1naryzer0
 // @match        *://*.youtube.com/*
 // @run-at       document-start
@@ -12,7 +12,36 @@
 (function() {
     'use strict';
 
-var newDomain="invidious.namazso.eu"; // change this to your preferred invidious instance
+// these are invidious instances you could use
+// just pick one and exchange the value of newDomain in
+// var newDomain="invidious.namazso.eu";
+// with the invidious instance domain of your choice
+
+/*
+var newDomain="
+ytprivate.com
+invidious.snopyta.org
+invidious.tube
+tube.connect.cafe
+yewtu.be
+invidious.zapashcanon.fr
+vid.puffyan.us
+invidious.himiko.cloud
+invidious.ethibox.fr
+invidious.xyz
+invidiou.site
+invidious.kavin.rocks
+inv.skyn3t.in
+invidious.fdn.fr
+invidious.namazso.eu
+invidious.site
+invidious.048596.xyz
+vid.mint.lgbt
+invidious.zee.li
+";
+*/
+
+var newDomain="invidious.namazso.eu";
 var newURL=location.protocol + "//"
 + newDomain //-- location.host
 + location.pathname
