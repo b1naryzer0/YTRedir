@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name        YTRedir
-// @namespace    https://github.com/b1naryzer0/YTRedir
-// @version      0.2
+// @name         YTRedir
+// @namespace    https://github.com/b1naryzer0/YTRedir/raw/main/ytredir.user.js
+// @version      0.21
 // @description  redirects any youtube link to invidious
 // @author       b1naryzer0
 // @match        *://*.youtube.com/*
-// @run-at      document-start
+// @run-at       document-start
 // @grant        none
 // ==/UserScript==
 
