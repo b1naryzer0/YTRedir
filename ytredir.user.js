@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTubeRedirector
 // @namespace    https://github.com/b1naryzer0/YTRedir/edit/main/ytredir.user.js
-// @version      0.22
+// @version      0.30
 // @description  redirects from YouTube to Invidious
 // @author       b1naryzer0
 // @match        *://*.youtube.com/*
