@@ -12,10 +12,8 @@
 (function() {
     'use strict';
 
-/* these are invidious instances you could use
-just pick one and exchange the value of newDomain in
-var newDomain="invidious.namazso.eu";
-with the invidious instance domain of your choice
+/* these are some invidious instances you could use
+// put the one of your choice in the var newDomain
 ytprivate.com
 invidious.tube
 tube.connect.cafe
