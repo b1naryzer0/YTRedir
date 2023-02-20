@@ -12,15 +12,11 @@
 (function() {
     'use strict';
 
-// these are invidious instances you could use
-// just pick one and exchange the value of newDomain in
-// var newDomain="invidious.namazso.eu";
-// with the invidious instance domain of your choice
-
-/*
-var newDomain="
+/* these are invidious instances you could use
+just pick one and exchange the value of newDomain in
+var newDomain="invidious.namazso.eu";
+with the invidious instance domain of your choice
 ytprivate.com
-invidious.snopyta.org
 invidious.tube
 tube.connect.cafe
 yewtu.be
@@ -33,14 +29,19 @@ invidiou.site
 invidious.kavin.rocks
 inv.skyn3t.in
 invidious.fdn.fr
-invidious.namazso.eu
 invidious.site
 invidious.048596.xyz
 vid.mint.lgbt
 invidious.zee.li
-";
+
+******* do not use these ********
+invidious.snopyta.org => has problems
+invidious.namazso.eu => has problems
 */
 
+// ***************************************************************************
+// METHOD 1
+// ***************************************************************************
 var newDomain="invidious.fdn.fr";
 var newURL=location.protocol + "//"
 + newDomain //-- location.host
@@ -48,10 +49,25 @@ var newURL=location.protocol + "//"
 + location.search
 + location.hash
 ;
-/*-- replace() puts the good page in the history instead of the
-    bad page.
-*/
+
 location.replace (newURL);
+
+
+// ***************************************************************************
+// METHOD 2
+// ***************************************************************************
+/*
+var url = window.location.toString();
+if (url.indexOf("www.youtube.com") !== - 1) {
+  window.location = url.replace("www.youtube.com", newDomain);
+} else if (url.indexOf('www.youtu.be') !== - 1) {
+    window.location = url.replace("www.youtu.be", newDomain);
+}
+*/
+
+// ***************************************************************************
+// END OF SCRIPT
+// ***************************************************************************
 })();
 
 
