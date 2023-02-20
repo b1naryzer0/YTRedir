@@ -41,7 +41,7 @@ invidious.zee.li
 ";
 */
 
-var newDomain="invidious.namazso.eu";
+var newDomain="invidious.fdn.fr";
 var newURL=location.protocol + "//"
 + newDomain //-- location.host
 + location.pathname
