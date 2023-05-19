@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTubeRedirector
 // @namespace    https://github.com/b1naryzer0/YTRedir/edit/main/ytredir.user.js
-// @version      0.30
+// @version      0.31
 // @description  redirects from YouTube to Invidious
 // @author       b1naryzer0
 // @match        *://*.youtube.com/*
@@ -46,6 +46,8 @@ var newURL=location.protocol + "//"
 + location.pathname
 + location.search
 + location.hash
++ "&listen=false"
++ "&autoplay=0"
 ;
 
 location.replace (newURL);
