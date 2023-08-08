@@ -5,6 +5,8 @@
 // @description  redirects from YouTube to Invidious
 // @author       b1naryzer0
 // @match        *://*.youtube.com/*
+// @exclude       *://*.reddit.com/*
+// @exclude       https://www.reddit.com/*
 // @run-at       document-start
 // @grant        none
 // ==/UserScript==
@@ -31,16 +33,28 @@ invidious.site
 invidious.048596.xyz
 vid.mint.lgbt
 invidious.zee.li
-
+yt.artemislena.eu
+yt.oelrichsgarcia.de
+invidious.lunar.icu
+iv.melmac.space
 ******* do not use these ********
 invidious.snopyta.org => has problems
 invidious.namazso.eu => has problems
+watch.thekitty.zone => has problems
 */
+
+/* also works with PIPED instances
+piped.video
+piped.kavin.rock
+*/
+
+var newDomain="iv.melmac.space";
 
 // ***************************************************************************
 // METHOD 1
 // ***************************************************************************
-var newDomain="invidious.fdn.fr";
+// see https://docs.invidious.io/url-parameters/ for more
+
 var newURL=location.protocol + "//"
 + newDomain //-- location.host
 + location.pathname
@@ -48,10 +62,12 @@ var newURL=location.protocol + "//"
 + location.hash
 + "&listen=false"
 + "&autoplay=0"
+// + "&quality=hd720"
++ "&quality=dash"
++ "&local=1"
 ;
 
 location.replace (newURL);
-
 
 // ***************************************************************************
 // METHOD 2
@@ -69,5 +85,3 @@ if (url.indexOf("www.youtube.com") !== - 1) {
 // END OF SCRIPT
 // ***************************************************************************
 })();
-
-
