@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTubeRedirector
 // @namespace    https://github.com/b1naryzer0/YTRedir/edit/main/ytredir.user.js
-// @version      0.31
+// @version      0.32
 // @description  redirects from YouTube to Invidious
 // @author       b1naryzer0
 // @match        *://*.youtube.com/*
@@ -37,6 +37,17 @@ yt.artemislena.eu
 yt.oelrichsgarcia.de
 invidious.lunar.icu
 iv.melmac.space
+inv.tux.pizza
+iv.nboeck.de
+invidious.lunar.icu
+piped.kavin.rocks
+iv.datura.network
+inv.citw.lgbt
+iv.melmac.space
+invidious.lunar.icu
+anontube.lvkaszus.pl
+yt.cdaut.de
+invidious.nerdvpn.de
 ******* do not use these ********
 invidious.snopyta.org => has problems
 invidious.namazso.eu => has problems
@@ -48,7 +59,7 @@ piped.video
 piped.kavin.rock
 */
 
-var newDomain="iv.melmac.space";
+var newDomain="invidious.nerdvpn.de";
 
 // ***************************************************************************
 // METHOD 1
@@ -60,11 +71,11 @@ var newURL=location.protocol + "//"
 + location.pathname
 + location.search
 + location.hash
-+ "&listen=false"
+// + "&listen=false"
 + "&autoplay=0"
 // + "&quality=hd720"
-+ "&quality=dash"
-+ "&local=1"
+// + "&quality=dash"
+// + "&local=1"
 ;
 
 location.replace (newURL);
